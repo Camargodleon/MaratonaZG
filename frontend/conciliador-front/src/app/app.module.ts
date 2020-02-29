@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GuiaComponent } from './guia/guia.component';
 import { ConciliaComponent } from './concilia/concilia.component';
+import { AlimentaArquivosComponent } from './alimenta-arquivos/alimenta-arquivos.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     GuiaComponent,
-    ConciliaComponent
+    ConciliaComponent,
+    AlimentaArquivosComponent
   ],
   imports: [
     BrowserModule,

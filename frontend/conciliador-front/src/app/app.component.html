@@ -27,20 +27,21 @@
         <li class="header">EQUIPE ROCKET</li>
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>MENU</span>
+            <i class="fa fa-angle-left"></i> <span>MENU</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
 
+            <li><a routerLink="/arquivo" routerLinkActive="active"><i class="fa fa-circle-o"></i> Alimentar Arquivos</a></li>
             <!--Menu guia-->
 
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> GUIAS</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> Guias</a></li>
 
             <!--Menu conciliação-->
 
-            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> CONCILIACAO</a></li>
+            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Conciliação</a></li>
           </ul>
         </li>
       </ul>
@@ -54,7 +55,6 @@
     <section class="content-header">
       <h1>
         ZG SOLUÇÕES
-        <small>Version 1.0</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
@@ -63,6 +63,8 @@
     </section>
 
     <!-- TELA PRINCIPAL DO SISTEMA -->
+    
+    <router-outlet></router-outlet>
 
   </div>
 
