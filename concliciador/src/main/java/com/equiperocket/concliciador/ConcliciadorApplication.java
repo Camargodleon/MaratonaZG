@@ -11,10 +11,4 @@ public class ConcliciadorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ConcliciadorApplication.class, args);
 	}
-	
-	@Bean
-	public RestTemplate getRestTemplate() {
-		return new RestTemplate();
-	}
-
 }
