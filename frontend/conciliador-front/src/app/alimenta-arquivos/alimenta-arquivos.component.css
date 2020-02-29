@@ -1,0 +1,8 @@
+#inputguia {
+    background-color: gray;
+    border-radius: 8px;
+    width: 200px;
+}
+#inputguia:hover{
+    background-color: lightblue;
+}
