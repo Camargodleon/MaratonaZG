@@ -23,7 +23,7 @@ public class WebCrawler {
 
 	public String fetchHtmlFrom(String url) {
 		ResponseEntity<String> str = consume.getForEntity(url, String.class);
-		
+	
 		return str.getBody();
 		
 
