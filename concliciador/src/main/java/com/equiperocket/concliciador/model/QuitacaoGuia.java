@@ -1,4 +1,4 @@
-package com.equiperocket.concliciador.model;
+	package com.equiperocket.concliciador.model;
 
 import java.util.Date;
 

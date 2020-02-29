@@ -1,9 +1,15 @@
 package com.equiperocket.concliciador.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
+
+@Entity
+@Table(name="prestador")
 public class Prestador {
-	@ManyToOne
+	@Id
 	private Integer id;
 	private Integer version;
 	private String cnpj;

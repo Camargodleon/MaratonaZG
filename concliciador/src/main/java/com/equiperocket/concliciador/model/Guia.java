@@ -16,12 +16,12 @@ public class Guia {
 	private int version;
 	private String numero;
 	@ManyToOne
-	private int prestador_id;
+	private Prestador prestador_id;
 	private float valor_total;
 	@ManyToOne
-	private int convenio_id;
+	private Convenio convenio_id;
 	@ManyToOne
-	private int beneficiario_id;
+	private Beneficiario beneficiario_id;
 	private Date data;
 	public int getId() {
 		return id;
@@ -41,10 +41,10 @@ public class Guia {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-	public int getPrestador_id() {
+	public Prestador getPrestador_id() {
 		return prestador_id;
 	}
-	public void setPrestador_id(int prestador_id) {
+	public void setPrestador_id(Prestador prestador_id) {
 		this.prestador_id = prestador_id;
 	}
 	public float getValor_total() {
@@ -53,16 +53,16 @@ public class Guia {
 	public void setValor_total(float valor_total) {
 		this.valor_total = valor_total;
 	}
-	public int getConvenio_id() {
+	public Convenio getConvenio_id() {
 		return convenio_id;
 	}
-	public void setConvenio_id(int convenio_id) {
+	public void setConvenio_id(Convenio convenio_id) {
 		this.convenio_id = convenio_id;
 	}
-	public int getBeneficiario_id() {
+	public Beneficiario getBeneficiario_id() {
 		return beneficiario_id;
 	}
-	public void setBeneficiario_id(int beneficiario_id) {
+	public void setBeneficiario_id(Beneficiario beneficiario_id) {
 		this.beneficiario_id = beneficiario_id;
 	}
 	public Date getData() {
@@ -71,6 +71,7 @@ public class Guia {
 	public void setData(Date data) {
 		this.data = data;
 	}
+
 
 
 }
