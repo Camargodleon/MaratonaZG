@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GuiaComponent } from './guia/guia.component';
+import { ConciliaComponent } from './concilia/concilia.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GuiaComponent,
+    ConciliaComponent
   ],
   imports: [
     BrowserModule,
