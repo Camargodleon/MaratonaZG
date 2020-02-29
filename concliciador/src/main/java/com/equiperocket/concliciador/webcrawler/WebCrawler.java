@@ -1,12 +1,6 @@
 package com.equiperocket.concliciador.webcrawler;
 
-import java.io.IOException;
-import java.net.URL;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
