@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-alimenta-arquivos',
   templateUrl: './alimenta-arquivos.component.html',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlimentaArquivosComponent implements OnInit {
 
-  guiasFile: File;
+
 
   constructor() { }
 
