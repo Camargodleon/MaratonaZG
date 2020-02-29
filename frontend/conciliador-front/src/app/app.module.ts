@@ -5,7 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GuiaComponent } from './guia/guia.component';
 import { ConciliaComponent } from './concilia/concilia.component';
+import { Routes, RouterModule } from '@angular/router';
 
+
+const routes: Routes = [
+  { path: '/guias', component: GuiaComponent }
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +19,8 @@ import { ConciliaComponent } from './concilia/concilia.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
