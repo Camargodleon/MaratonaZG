@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Table(name="item_guia")
 public class ItemGuia {
 	@Id
-	private int id;
+	private Long id;
 	private int version;
 	private int quantidade;
 	@ManyToOne
@@ -19,10 +19,11 @@ public class ItemGuia {
 	private Produto produto_id;
 	private float valor_total;
 	private int numero;
-	public int getId() {
+
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public int getVersion() {

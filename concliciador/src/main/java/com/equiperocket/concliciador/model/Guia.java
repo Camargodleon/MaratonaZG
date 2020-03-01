@@ -12,8 +12,14 @@ import javax.persistence.Table;
 public class Guia {
 	
 	@Id
-	private int id;
+	private Long id;
 	private int version;
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	private String numero;
 	@ManyToOne
 	private Prestador prestador_id;
@@ -23,12 +29,7 @@ public class Guia {
 	@ManyToOne
 	private Beneficiario beneficiario_id;
 	private Date data;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+
 	public int getVersion() {
 		return version;
 	}
